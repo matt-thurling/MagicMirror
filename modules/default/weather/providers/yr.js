@@ -340,7 +340,7 @@ WeatherProvider.register("yr", {
 		if (hours.length < 2) {
 			hours = `0${hours}`;
 		}
-		return `${this.config.apiBase}/sunrise/2.3/sun?lat=${lat}&lon=${lon}&date=${date}&offset=${utcOffsetPrefix}${hours}%3A${minutes}`;
+		return `${this.config.apiBase}/sunrise/3.0/sun?lat=${lat}&lon=${lon}&date=${date}&offset=${utcOffsetPrefix}${hours}%3A${minutes}`;
 	},
 
 	cacheStellarData(data) {
